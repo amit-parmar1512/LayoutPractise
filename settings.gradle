@@ -1,0 +1,2 @@
+rootProject.name='LayoutPractise'
+include ':app'

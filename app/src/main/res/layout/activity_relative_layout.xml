@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6347"
+    tools:context=".RelativeLayout">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type your name here"
+        android:background="#87CEEB"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonOk1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Ok1"
+        android:tooltipText="Will show your name"
+        android:layout_below="@id/textViewName"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:layout_alignWithParentIfMissing="true" />
+
+    <Button
+        android:id="@+id/buttonCancel1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel1"
+        android:tooltipText="Cancel"
+        android:layout_below="@id/textViewName"
+        android:layout_toLeftOf="@id/buttonOk1"
+        android:layout_alignWithParentIfMissing="true" />
+
+    <Button
+        android:id="@+id/buttonOk2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Ok2"
+        android:tooltipText="Will show your name"
+        android:layout_below="@id/textViewName"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"
+        android:layout_alignWithParentIfMissing="true" />
+
+    <Button
+        android:id="@+id/buttonCancel2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel2"
+        android:tooltipText="Cancel"
+        android:layout_below="@id/textViewName"
+        android:layout_toRightOf="@id/buttonOk2"
+        android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>
